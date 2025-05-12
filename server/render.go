@@ -94,7 +94,7 @@ func DataRender(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	tmpl, err := template.ParseFiles("static/hompage.html", "static/overlay.html", "static/header.html", "static/footer.html")
+	tmpl, err := template.ParseFiles("static/homepage.html", "static/overlay.html", "static/header.html", "static/footer.html")
 	if err != nil {
 		ErrorPage(w, http.StatusInternalServerError)
 		return
